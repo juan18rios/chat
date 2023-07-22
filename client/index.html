@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-md-center mt-3">
+            <div class="col-md-7">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="text-center">CHAT</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="chat" id="listaMensajes">
+
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <small id="escribiendo">&nbsp;</small>
+                        <form id="form">
+                            <div class="input-group">
+                                <input id="mensaje" type="text" class="form-control"
+                                    placeholder="Escribe tu mensaje aquí..." autocomplete="off" />
+                                <span class="input-group-append">
+                                    <button class="btn btn-warning" id="btn-chat">Enviar</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/formatTimeStamp.js"></script>
+    <script src="./js/socket.io.js"></script>
+    <script src="./js/chat.js"></script>
+</body>
+
+</html>
